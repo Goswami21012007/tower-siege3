@@ -8,11 +8,11 @@ var ground,ground2,ground3,block1,block2,block3,block4,block5,block6,block7,bloc
 var block14,block15,block16,block17,block18,block19,block20,block21,block22,block23,block24,block25;
 var block26,block27,block28,block29,polygon,polygon_Image;
 var backgroundImg
-var bg="bg.jpg"
+
 function preload()
 {
+  bg=loadImage("afternoon.jpg")
   
-  getBackgroundImg();
 }
 
 function setup() {
@@ -85,9 +85,9 @@ slingShot=new SlingShot(polygon.body,{x:58,y:159})
 
 
 function draw() {
-  if(backgroundImg){
-    background(backgroundImg)
-  }
+  background(bg)
+    
+  
  
 
   rectMode(CENTER);
